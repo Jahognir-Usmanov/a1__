@@ -1,0 +1,455 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.screen_1 {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('./long-view-modern-skyscrapers-office-buildings\ \(1\)\ 1.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+@media (min-width: 1050px) {
+    .cart_photo {
+        margin-left: 100px!important;
+    }
+}
+
+.screen_1_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 60px;
+}
+
+.screen_1 h1 {
+    font-size: 58px;
+}
+
+.screen_1 h3 {
+    font-size: 25px;
+}
+
+.screen_1 span {
+    padding-top: 20px;
+    width: 458px;
+    color: #7B7B7B;
+}
+
+@media (max-width: 768px) {
+    .screen_1 h1 {
+        font-size: 48px;
+    }
+    .screen_1 h3 {
+        font-size: 18px;
+    }
+    .screen_1 span {
+        font-size: 14px;
+    }
+    .screen_1_info {
+        padding: 20px;
+    }
+    .screen_1 span {
+        width: 100%;
+    }
+}
+
+.screen_1_photo {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: -40px;
+}
+
+.screen_1_photo1 {
+    margin-top: -140px;
+    margin-left: -90px;
+    width: 424px;
+}
+
+.screen_1_photo2 {
+    margin-top: 100px;
+    padding-bottom: -100px;
+    width: 220px;
+}
+
+@media (max-width: 950px) {
+    .screen_1_photo {
+        display: none;
+    }
+}
+
+
+.screen_2_cart {
+
+    font-weight: 500;
+    color: #C83B3B;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.content-box {
+    flex: 1 1 250px;
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s; /* Добавляем плавный переход */
+}
+
+.content-box h2 {
+    color: #C83B3B;
+    font-size: 65px;
+    font-family: "Oxygen Mono", monospace;
+    font-weight: 500;
+    margin: 0;
+}
+
+.content-box h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.content-box p {
+    font-size: 16px;
+    color: #7B7B7B;
+}
+
+/* Добавляем эффект при наведении */
+.content-box:hover {
+    background-color: #323232; /* Фон карточки становится черным */
+    color: white; /* Цвет текста становится белым */
+}
+
+.content-box:hover h2,
+.content-box:hover h3,
+.content-box:hover p {
+    color: white; /* Указываем цвет текста для всех элементов внутри карточки при наведении */
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.screen_2 {
+    border-radius: 50px;
+    background-color: #F6F6F6;
+}
+
+.screen_2_h2 {
+    margin-left: 130px;
+    padding: 40px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 38px;
+    font-family: "Oxygen Mono", monospace;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+    .screen_2_h2 {
+        margin-left: 0px;
+        padding: 20px;
+    }
+}
+
+.form-container {
+    background-image: url('./Rectangle\ 54\ —\ копия.svg'); /* Замените на свой фон */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    /* max-width: 1200px; */
+    padding: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.form-content {
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-content h2 {
+    font-size: 38px;
+    text-transform: uppercase;
+    margin-top: -120px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #666;
+}
+
+.form-group input {
+    width: 120%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #007bff;
+}
+
+.submit-btn {
+    margin-top: 30px;
+    width: 120%;
+    padding: 15px;
+    background-color: #C83B3B;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #a02d2d;
+}
+
+.submit-btn svg {
+    margin-left: 10px;
+}
+
+.worker-image {
+    margin-bottom: -60px;
+    width: 830px;
+    height: 487px;
+}
+
+@media (max-width: 1140px) {
+    .form-content h2 {
+        margin-top: 0px;
+    }
+    .form-group input {
+        width: 100%;
+    }
+    .submit-btn {
+        width: 100%;
+    }
+    .form-container {
+        display: flex;
+        justify-content: center;
+    }
+    .worker-image {
+        display: none;
+    }
+    .submit-btn {
+        font-size: 16px;
+    }
+}
+
+footer {
+    background-image: url('./image 6.svg'); /* Замените на свой фон */
+    display: flex; 
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку на узких экранах */
+}
+
+footer h2 {
+    padding: 40px;
+    padding-left: 60px;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: "Oxygen Mono", monospace;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.footer_info {
+    margin-top: 60px;
+    margin-right: 60px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-items: end;
+    width: 340px;
+    height: 337px;
+    border-radius: 12px;
+    background-color: #FFFF;
+    margin-left: auto;
+}
+
+footer h3 {
+    padding: 20px;
+    font-size: 34px;
+    font-family: "Oxygen Mono", monospace;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+footer span {
+    color: #7B7B7B;
+    padding-left: 18px;
+}
+
+footer p {
+    margin-left: 50px;
+    padding-left: 20px;
+}
+
+footer i {
+    margin-right: 14px;
+    border-radius: 30px;
+    color: black;
+    background-color: #F6F6F6;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.social_links {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+/* Адаптация для планшетов */
+@media (max-width: 1024px) {
+    footer {
+        flex-direction: column; /* Ставим элементы в столбец на планшетах */
+        align-items: center; /* Выравниваем по центру */
+    }
+
+    .footer_info {
+        margin: 20px 0; /* Уменьшаем отступы */
+        width: 90%; /* Делаем ширину адаптивной */
+        height: auto; /* Высота автоматически по содержимому */
+    }
+
+    footer h2 {
+        font-size: 32px; /* Уменьшаем шрифт для планшетов */
+        padding-left: 20px;
+        text-align: center; /* Центрируем текст */
+    }
+
+    footer h3 {
+        font-size: 28px; /* Уменьшаем шрифт для заголовков на планшетах */
+    }
+
+    footer i {
+        font-size: 18px; /* Немного уменьшаем иконки */
+    }
+
+    footer p, footer span {
+        padding-left: 10px;
+        margin-left: 0;
+    }
+}
+
+/* Адаптация для телефонов */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column; /* Элементы в колонку на мобильных */
+        align-items: center;
+    }
+
+    footer h2 {
+        font-size: 38px; /* Ещё меньше шрифт для телефонов */
+        /* padding-left: 10px; */
+        text-align: center;
+    }
+
+    .footer_info {
+        gap: 8px;
+        text-align: center;
+        width: 100%; /* На телефонах занимаем всю ширину */
+        margin: 20px 0;
+        padding: 15px;
+        height: auto;
+    }
+
+    footer h3 {
+        font-size: 22px; /* Уменьшаем заголовки для телефонов */
+    }
+
+    footer i {
+        font-size: 16px; /* Иконки поменьше на телефонах */
+        padding: 8px;
+    }
+
+    footer p, footer span {
+        padding-left: 5px;
+        margin-left: 0;
+    }
+
+    .social_links {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+}
+
+#modal h2 {
+    font-family: "Oxygen Mono", monospace;
+}
+
+.form_button {
+    width: 100%;
+    height: 58px;
+    background-color: #C83B3B;
+}
+
+.form_button:hover {
+    background-color: #ab3636!important;
+}
+
+/* Стили для сообщения */
+.success-message, .error-message {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    display: none; /* По умолчанию скрыто */
+}
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.hidden {
+    display: none;
+}

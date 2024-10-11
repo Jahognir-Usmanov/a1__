@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitsubishi - Системы кондиционирования</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="bg-white shadow-md fixed top-0 left-0 w-full">
+    <div class="container mx-auto flex items-center justify-between py-4 px-4 lg:px-8">
+        <!-- Логотипы -->
+        <div class="flex items-center space-x-4">
+            <img src="Mitsubishi_Welkin Distribution 4.svg" alt="Mitsubishi Electric" class="h-10">
+            <img src="Mitsubishi_Welkin Distribution 2 — копия.svg" alt="">
+            <img src="Mitsubishi_Welkin Distribution 3 — копия.svg" alt="">
+        </div>
+
+        <!-- Контактная информация -->
+        <div class="hidden lg:flex flex-col text-gray-500">
+            <span><i class="fas fa-map-marker-alt"></i> Чиланзар-1, ул.Лабихавуз 57</span>
+            <span class="text-sm">Местоположение офиса</span>
+        </div>
+
+        <!-- Телефон и режим работы -->
+        <div class="hidden lg:flex flex-col text-gray-500">
+            <span><i class="fas fa-phone"></i> +998 33 561 66 66</span>
+            <span class="text-sm">Работаем 24/7</span>
+        </div>
+
+        <!-- Кнопка "Заказать звонок" -->
+        <a id="openModal" style="border-radius: 30px; background-color: #C83B3B;" class="hidden lg:inline-block text-white py-2 px-4 rounded hover:bg-red-700">
+            Заказать звонок
+        </a>
+
+        <!-- Гамбургер меню для мобильных -->
+        <div class="lg:hidden">
+            <button id="hamburger" class="text-gray-500 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Навигация -->
+    <nav id="navbar" class="hidden lg:flex justify-center bg-white shadow-lg">
+        <ul class="flex space-x-8 text-gray-700 py-2">
+            <li><a href="#our_products" class="hover:text-red-600 hover:underline">Наша продукция</a></li>
+            <li><a href="#about" class="hover:text-red-600 hover:underline">О нас</a></li>
+            <li><a href="#why_we" class="hover:text-red-600 hover:underline">Почему мы</a></li>
+            <li><a href="#our_partners" class="hover:text-red-600 hover:underline">Наши клиенты</a></li>
+            <li><a href="#form" class="hover:text-red-600 hover:underline">Оставить заявку</a></li>
+            <li><a href="#footer" class="hover:text-red-600 hover:underline">Где мы находимся</a></li>
+        </ul>
+    </nav>
+
+    <!-- Мобильное меню -->
+    <nav id="mobile-menu" class="fixed inset-0 bg-black bg-opacity-75 flex flex-col justify-center items-center space-y-6 text-white hidden">
+        <a href="#our_products" class="text-xl hover:text-red-600">Наша продукция</a>
+        <a href="#about" class="text-xl hover:text-red-600">О нас</a>
+        <a href="#why_we" class="text-xl hover:text-red-600">Почему мы</a>
+        <a href="#our_partners" class="text-xl hover:text-red-600">Наши клиенты</a>
+        <a href="#form" class="text-xl hover:text-red-600">Оставить заявку</a>
+        <a href="#footer" class="text-xl hover:text-red-600">Где мы находимся</a>
+        <button id="close" class="absolute top-4 right-4 text-white text-2xl">X</button>
+    </nav>
+</header>
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const close = document.getElementById('close');
+
+    hamburger.addEventListener('click', () => {
+        mobileMenu.classList.remove('hidden');
+    });
+
+    close.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+    });
+</script>
+
+
+<section class="screen_1 mt-20">
+    <div class="screen_1_info">
+    <h1>MITSUBISHI</h1>
+    <h3>Системы кондиционирования воздуха</h3>
+    <span>Mitsubishi Electric является мировым лидером в производстве систем кондиционирования для бытового, коммерческого и промышленного использования.</span>
+    <div class="screen_1_photo">
+    <img class="screen_1_photo2" src="i-removebg-preview 3.svg" alt="">
+    <img class="screen_1_photo1" src="фыв 4 (1).svg" alt="">
+</div>
+</div>
+
+</section>
+
+
+
+    <section id="our_products" class="max-w-7xl mx-auto px-4 py-12">
+      <h1 class="text-3xl font-bold text-gray-800 mb-10 text-start">НАША ПРОДУКЦИЯ</h1>
+      
+      <!-- Чиллер Фанкойл -->
+      <div class="flex flex-col md:flex-row-reverse items-center bg-white shadow-md rounded-lg overflow-hidden mb-8 bg-gray-100">
+        <div class="md:w-1/3">
+          <img src="Group 957 2.svg" alt="Чиллер Фанкойл" class="w-100 h-100 object-cover cart_photo">
+        </div>
+        <div class="p-6 md:w-2/3">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-4">Чиллер Фанкойл</h2>
+          <p class="text-gray-600 mb-4">Высокоэффективные системы охлаждения, предназначенные для крупных объектов, таких как офисные здания, торговые центры и промышленные предприятия. Они обеспечивают стабильную работу в любых климатических условиях, гарантируя максимальный комфорт и экономию энергии.</p>
+          <a id="openModal1" class="text-red-600 hover:text-red-800 font-medium">Узнать детали &rarr;</a>
+        </div>
+      </div>
+  
+      <!-- VRF системы -->
+      <div class="flex flex-col md:flex-row-reverse items-center bg-white shadow-md rounded-lg overflow-hidden mb-8 bg-gray-100">
+        <div class="md:w-1/3">
+          <img src="фыв 4 (1).svg" alt="VRF системы" class="w-100 h-100 object-cover cart_photo">
+        </div>
+        <div class="p-6 md:w-2/3">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-4">VRF системы</h2>
+          <p class="text-gray-600 mb-4">VRF системы предлагают передовые решения для климат-контроля в зданиях любой сложности. Эти системы обеспечивают точную регулировку температуры в каждом помещении, что позволяет значительно сократить энергозатраты.</p>
+          <a id="openModal2" class="text-red-600 hover:text-red-800 font-medium">Узнать детали &rarr;</a>
+        </div>
+      </div>
+  
+      <!-- Внутренние блоки -->
+      <div class="flex flex-col md:flex-row-reverse items-center bg-white shadow-md rounded-lg overflow-hidden mb-8 bg-gray-100">
+        <div class="md:w-1/3">
+          <img src="PLFY-P20VEM-E 1 — копия 2.svg" alt="Внутренние блоки" class="w-100 h-100 object-cover cart_photo">
+        </div>
+        <div class="p-6 md:w-2/3">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-4">Внутренние блоки</h2>
+          <p class="text-gray-600 mb-4">Внутренние блоки предлагают широкий выбор решений для кондиционирования воздуха. Эти блоки идеально подходят для офисов, торговых площадей, гостиниц и жилых помещений, обеспечивая эффективность и низкий уровень шума.</p>
+          <a id="openModal3" class="text-red-600 hover:text-red-800 font-medium">Узнать детали &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+<!-- About Us Section --> 
+<section id="about" class="container mx-auto my-10 px-4 sm:px-6 lg:px-8">
+    <h2 class="text-start text-3xl font-semibold mb-8 uppercase">О нас</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+            <img src="image_2024-10-05_14-07-35 1.svg" alt="Factory" class="w-full h-auto rounded-lg shadow-lg">
+        </div>
+        <div class="flex flex-col justify-center">
+            <h3 class="text-3xl mb-4">Мы мировой лидер в производстве</h3>
+            <p class="text-gray-600 mb-6">Mitsubishi Electric является мировым лидером в производстве систем кондиционирования для бытового, коммерческого и промышленного использования. При разработке систем кондиционирования воздуха компания столкнулась с необходимостью учитывать разнообразные климатические условия в различных уголках мира. Системы кондиционирования Mitsubishi Electric обеспечивают требуемую производительность, высокую надёжность и эффективность при любых параметрах окружающей среды. Некоторые конструктивные решения, применяемые в оборудовании кондиционирования воздуха</p>
+            <a id="openModal4" class="text-red-600 hover:text-red-800 font-medium" style="text-decoration: underline;">Связаться с нами &rarr;</a>
+        </div>
+    </div>
+</section>
+
+<section id="why_we" class="screen_2">
+    <h2 class="text-start screen_2_h2">Почему мы?</h2>
+<div class="wrapper">
+<div class="content-box">
+    <h2>01.</h2>
+    <h3>Мы мировой лидер в производстве</h3>
+    <p>Mitsubishi Electric является мировым лидером в производстве систем кондиционирования для коммерческого и промышленного использования.</p>
+</div>
+<div class="content-box">
+    <h2>02.</h2>
+    <h3>Высокие стандарты качества</h3>
+    <p>Мы предлагаем климатические системы, которые соответствуют строгим мировым стандартам, обеспечивая надёжность на долгие годы.</p>
+</div>
+<div class="content-box">
+    <h2>03.</h2>
+    <h3>Техническая поддержка</h3>
+    <p>Наши эксперты предоставляют всестороннюю техническую поддержку — от консультаций по выбору оборудования до его установки и обслуживания.</p>
+</div>
+<div class="content-box">
+    <h2>04.</h2>
+    <h3>Индивидуальные решения для бизнеса</h3>
+    <p>Мы предлагаем гибкие климатические решения, адаптированные под уникальные требования вашего проекта, будь то жилое здание, офис или промышленный объект.</p>
+</div>
+</div>
+</section>
+
+<script>
+    async function sendMessage(event) {
+        event.preventDefault();
+
+        const name = document.getElementById('name').value;
+        const question = document.getElementById('question').value;
+
+        const response = await fetch('/send-message', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ name, question }),
+        });
+
+        if (response.ok) {
+            alert('Ваше сообщение отправлено!');
+            document.getElementById('name').value = '';
+            document.getElementById('question').value = '';
+        } else {
+            const error = await response.json();
+            alert(`Ошибка: ${error.error}`);
+        }
+    }
+</script>
+
+<div id="form" class="form-container">
+<div class="form-content">
+    <h2>Оставьте заявку</h2>
+    <form onsubmit="sendMessage(event)" id="applicationForm">
+        <div class="form-group">
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="question">Номер телефона</label>
+            <input type="tel" id="question" name="phone" required>
+        </div>
+        <button type="submit" class="submit-btn">
+            Оставить заявку &rarr;
+        </button>
+    </form>
+</div>
+<img src="front-view-male-builder-uniform-helmet-holding-tool-case-gray-background 2.svg" alt="Рабочий" class="worker-image">
+</div>
+
+<footer id="footer">
+    <h2>Где мы находимся?</h2>
+    <!-- <img src="Vector.svg" alt=""> -->
+    <div class="footer_info">
+        <h3>Контакты</h3>
+        <span>Наши контакты для связи с нами</span>
+        <span><i class="fas fa-phone"></i>Номер телефона</span>
+        <p>+998 33 561 66 66</p>
+        <span><i class="fas fa-map-marker-alt"></i>Адрес</span>
+        <p>Чиланзар-1, ул.Лабихавуз 57</p>
+            <div class="social_links">
+                <a href="#"><i style="font-size: 26px; color: #FFFF; background-color: #C83B3B;" class="fab fa-instagram"></i></a>
+                <a href="#"><i style="font-size: 26px; color: #FFFF; background-color: #7B7B7B;" class="fab fa-telegram"></i></a>
+                <a href="#"><i style="font-size: 26px; color: #FFFF; background-color: #7B7B7B;" class="fab fa-facebook"></i></a>
+            </div>
+    </div>
+</footer>
+<!-- 
+    <div class="flex justify-center mt-10">
+        <button id="openModal" class="bg-red-500 text-white px-6 py-2 rounded-lg hover:bg-red-600">
+            Заказать звонок
+        </button>
+    </div> -->
+
+    <div id="modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+        <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full relative">
+            <!-- Кнопка закрытия -->
+            <button id="closeModal" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700">
+                &times;
+            </button>
+            <!-- Заголовок -->
+            <h2 class="text-2xl mb-4">ЗАКАЗАТЬ ЗВОНОК</h2>
+            <p style="color: #7B7B7B;" class="mb-4">Оставьте свои данные и мы свяжемся с вами в ближайшее время</p>
+            <!-- Форма -->
+            <form onsubmit="sendMessage1(event)">
+                <input id="name_" type="text" placeholder="Имя" class="w-full mb-3 p-3 border rounded-[30px] focus:outline-none focus:border-red-500">
+                <input id="question_" type="text" placeholder="Номер телефона" class="w-full mb-3 p-3 border rounded-[30px] focus:outline-none focus:border-red-500">
+                <button type="submit" class="text-start text-white px-6 py-2 w-full rounded-[50px] hover:bg-red-600 form_button">
+                    Оставить заявку &rarr;
+                </button>
+            </form>
+        </div>
+        </div>
+
+        <script>
+            async function sendMessage1(event) {
+                event.preventDefault();
+        
+                const name = document.getElementById('name_').value;
+                const question = document.getElementById('question_').value;
+        
+                const response = await fetch('/send-message', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ name, question }),
+                });
+        
+                if (response.ok) {
+                    alert('Ваше сообщение отправлено!');
+                    document.getElementById('name_').value = '';
+                    document.getElementById('question_').value = '';
+                } else {
+                    const error = await response.json();
+                    alert(`Ошибка: ${error.error}`);
+                }
+            }
+        </script>
+
+
+    <script>
+        // Открытие модального окна
+        document.getElementById('openModal').addEventListener('click', function() {
+            document.getElementById('modal').classList.remove('hidden');
+        });
+
+        // Закрытие модального окна
+        document.getElementById('closeModal').addEventListener('click', function() {
+            document.getElementById('modal').classList.add('hidden');
+        });
+
+        // Закрытие при нажатии на фон
+        document.getElementById('modal').addEventListener('click', function(event) {
+            if (event.target === this) {
+                this.classList.add('hidden');
+            }
+        });
+    </script>
+
+<script>
+    // Открытие модального окна
+    document.getElementById('openModal1').addEventListener('click', function() {
+        document.getElementById('modal').classList.remove('hidden');
+    });
+
+    // Закрытие модального окна
+    document.getElementById('closeModal1').addEventListener('click', function() {
+        document.getElementById('modal1').classList.add('hidden');
+    });
+
+    // Закрытие при нажатии на фон
+    document.getElementById('modal1').addEventListener('click', function(event) {
+        if (event.target === this) {
+            this.classList.add('hidden');
+        }
+    });
+</script>
+
+<script>
+    // Открытие модального окна
+    document.getElementById('openModal2').addEventListener('click', function() {
+        document.getElementById('modal').classList.remove('hidden');
+    });
+
+    // Закрытие модального окна
+    document.getElementById('closeModal2').addEventListener('click', function() {
+        document.getElementById('modal2').classList.add('hidden');
+    });
+
+    // Закрытие при нажатии на фон
+    document.getElementById('modal2').addEventListener('click', function(event) {
+        if (event.target === this) {
+            this.classList.add('hidden');
+        }
+    });
+</script>
+
+<script>
+    // Открытие модального окна
+    document.getElementById('openModal3').addEventListener('click', function() {
+        document.getElementById('modal').classList.remove('hidden');
+    });
+
+    // Закрытие модального окна
+    document.getElementById('closeModal3').addEventListener('click', function() {
+        document.getElementById('modal3').classList.add('hidden');
+    });
+
+    // Закрытие при нажатии на фон
+    document.getElementById('modal3').addEventListener('click', function(event) {
+        if (event.target === this) {
+            this.classList.add('hidden');
+        }
+    });
+</script>
+
+<script>
+    // Открытие модального окна
+    document.getElementById('openModal4').addEventListener('click', function() {
+        document.getElementById('modal').classList.remove('hidden');
+    });
+
+    // Закрытие модального окна
+    document.getElementById('closeModal4').addEventListener('click', function() {
+        document.getElementById('modal4').classList.add('hidden');
+    });
+
+    // Закрытие при нажатии на фон
+    document.getElementById('modal4').addEventListener('click', function(event) {
+        if (event.target === this) {
+            this.classList.add('hidden');
+        }
+    });
+</script>
+
+<script>
+    // Находим все ссылки внутри навигации
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault(); // Отключаем стандартное поведение
+
+        const targetId = this.getAttribute('href'); // Получаем цель
+        const targetElement = document.querySelector(targetId); // Находим элемент
+
+        // Плавная прокрутка
+        targetElement.scrollIntoView({
+          behavior: 'smooth', // Плавная прокрутка
+          block: 'start' // Начало секции
+        });
+      });
+    });
+</script>
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
